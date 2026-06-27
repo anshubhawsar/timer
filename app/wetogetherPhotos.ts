@@ -1,0 +1,23 @@
+
+export const wetogetherPhotos: string[] = [
+  "/wetogether/photo_1_2026-06-27_13-43-06.jpg",
+  "/wetogether/photo_2_2026-06-27_13-43-06.jpg",
+  "/wetogether/photo_3_2026-06-27_13-43-06.jpg",
+  "/wetogether/photo_4_2026-06-27_13-43-06.jpg",
+  "/wetogether/photo_5_2026-06-27_13-43-06.jpg",
+  "/wetogether/photo_6_2026-06-27_13-43-06.jpg",
+  "/wetogether/photo_7_2026-06-27_13-43-06.jpg",
+  "/wetogether/photo_8_2026-06-27_13-43-06.jpg",
+  "/wetogether/photo_9_2026-06-27_13-43-06.jpg",
+  "/wetogether/photo_10_2026-06-27_13-43-06.jpg",
+  "/wetogether/photo_11_2026-06-27_13-43-06.jpg",
+  "/wetogether/photo_12_2026-06-27_13-43-06.jpg",
+  "/wetogether/photo_13_2026-06-27_13-43-06.jpg",
+  "/wetogether/photo_14_2026-06-27_13-43-06.jpg",
+  "/wetogether/photo_15_2026-06-27_13-43-06.jpg",
+  "/wetogether/photo_16_2026-06-27_13-43-06.jpg",
+  "/wetogether/photo_17_2026-06-27_13-43-06.jpg",
+  "/wetogether/photo_18_2026-06-27_13-43-06.jpg",
+  "/wetogether/photo_19_2026-06-27_13-43-06.jpg",
+  "/wetogether/photo_20_2026-06-27_13-43-06.jpg",
+];

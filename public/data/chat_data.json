@@ -1,0 +1,1735 @@
+{
+  "generated_at": "2026-06-08T16:03:43.212413+00:00",
+  "participants": [
+    "Anshu",
+    "Kittu"
+  ],
+  "date_range": {
+    "start": "2025-12-11",
+    "end": "2026-06-08"
+  },
+  "total_message_count": {
+    "Anshu": 24637,
+    "Kittu": 16220
+  },
+  "time_heatmap": [
+    {
+      "hour": 0,
+      "count": 74
+    },
+    {
+      "hour": 1,
+      "count": 16
+    },
+    {
+      "hour": 2,
+      "count": 1
+    },
+    {
+      "hour": 3,
+      "count": 7
+    },
+    {
+      "hour": 4,
+      "count": 6
+    },
+    {
+      "hour": 5,
+      "count": 16
+    },
+    {
+      "hour": 6,
+      "count": 39
+    },
+    {
+      "hour": 7,
+      "count": 287
+    },
+    {
+      "hour": 8,
+      "count": 813
+    },
+    {
+      "hour": 9,
+      "count": 307
+    },
+    {
+      "hour": 10,
+      "count": 816
+    },
+    {
+      "hour": 11,
+      "count": 481
+    },
+    {
+      "hour": 12,
+      "count": 428
+    },
+    {
+      "hour": 13,
+      "count": 603
+    },
+    {
+      "hour": 14,
+      "count": 2046
+    },
+    {
+      "hour": 15,
+      "count": 2753
+    },
+    {
+      "hour": 16,
+      "count": 1023
+    },
+    {
+      "hour": 17,
+      "count": 379
+    },
+    {
+      "hour": 18,
+      "count": 280
+    },
+    {
+      "hour": 19,
+      "count": 556
+    },
+    {
+      "hour": 20,
+      "count": 902
+    },
+    {
+      "hour": 21,
+      "count": 4102
+    },
+    {
+      "hour": 22,
+      "count": 18449
+    },
+    {
+      "hour": 23,
+      "count": 6473
+    }
+  ],
+  "emoji_leaderboard": {
+    "Anshu": [
+      {
+        "emoji": "😂",
+        "count": 1458
+      },
+      {
+        "emoji": "☺",
+        "count": 1075
+      },
+      {
+        "emoji": "✨",
+        "count": 714
+      },
+      {
+        "emoji": "💖",
+        "count": 533
+      },
+      {
+        "emoji": "😁",
+        "count": 485
+      },
+      {
+        "emoji": "🙂",
+        "count": 209
+      },
+      {
+        "emoji": "💞",
+        "count": 138
+      },
+      {
+        "emoji": "🫂",
+        "count": 88
+      },
+      {
+        "emoji": "💕",
+        "count": 77
+      },
+      {
+        "emoji": "😭",
+        "count": 75
+      }
+    ],
+    "Kittu": [
+      {
+        "emoji": "✨",
+        "count": 780
+      },
+      {
+        "emoji": "☺",
+        "count": 450
+      },
+      {
+        "emoji": "😁",
+        "count": 422
+      },
+      {
+        "emoji": "💞",
+        "count": 396
+      },
+      {
+        "emoji": "💖",
+        "count": 373
+      },
+      {
+        "emoji": "😂",
+        "count": 152
+      },
+      {
+        "emoji": "🫂",
+        "count": 105
+      },
+      {
+        "emoji": "💕",
+        "count": 52
+      },
+      {
+        "emoji": "😊",
+        "count": 40
+      },
+      {
+        "emoji": "🤗",
+        "count": 23
+      }
+    ]
+  },
+  "pet_name_counter": {
+    "total": {
+      "bcha": 565,
+      "beta": 1270,
+      "cutie": 94
+    },
+    "by_sender": {
+      "Anshu": {
+        "bcha": 550,
+        "beta": 1220,
+        "cutie": 89
+      },
+      "Kittu": {
+        "bcha": 15,
+        "beta": 50,
+        "cutie": 5
+      }
+    }
+  },
+  "timeline": [
+    {
+      "date": "2025-12-11",
+      "total": 1,
+      "Anshu": 0,
+      "Kittu": 1
+    },
+    {
+      "date": "2025-12-23",
+      "total": 123,
+      "Anshu": 64,
+      "Kittu": 59
+    },
+    {
+      "date": "2025-12-24",
+      "total": 94,
+      "Anshu": 48,
+      "Kittu": 46
+    },
+    {
+      "date": "2025-12-25",
+      "total": 264,
+      "Anshu": 164,
+      "Kittu": 100
+    },
+    {
+      "date": "2025-12-26",
+      "total": 50,
+      "Anshu": 30,
+      "Kittu": 20
+    },
+    {
+      "date": "2025-12-27",
+      "total": 177,
+      "Anshu": 112,
+      "Kittu": 65
+    },
+    {
+      "date": "2025-12-28",
+      "total": 175,
+      "Anshu": 115,
+      "Kittu": 60
+    },
+    {
+      "date": "2025-12-29",
+      "total": 119,
+      "Anshu": 72,
+      "Kittu": 47
+    },
+    {
+      "date": "2025-12-30",
+      "total": 101,
+      "Anshu": 59,
+      "Kittu": 42
+    },
+    {
+      "date": "2025-12-31",
+      "total": 60,
+      "Anshu": 36,
+      "Kittu": 24
+    },
+    {
+      "date": "2026-01-01",
+      "total": 266,
+      "Anshu": 176,
+      "Kittu": 90
+    },
+    {
+      "date": "2026-01-02",
+      "total": 362,
+      "Anshu": 213,
+      "Kittu": 149
+    },
+    {
+      "date": "2026-01-03",
+      "total": 258,
+      "Anshu": 174,
+      "Kittu": 84
+    },
+    {
+      "date": "2026-01-04",
+      "total": 177,
+      "Anshu": 107,
+      "Kittu": 70
+    },
+    {
+      "date": "2026-01-05",
+      "total": 276,
+      "Anshu": 183,
+      "Kittu": 93
+    },
+    {
+      "date": "2026-01-06",
+      "total": 251,
+      "Anshu": 162,
+      "Kittu": 89
+    },
+    {
+      "date": "2026-01-07",
+      "total": 117,
+      "Anshu": 71,
+      "Kittu": 46
+    },
+    {
+      "date": "2026-01-08",
+      "total": 294,
+      "Anshu": 178,
+      "Kittu": 116
+    },
+    {
+      "date": "2026-01-09",
+      "total": 3,
+      "Anshu": 3,
+      "Kittu": 0
+    },
+    {
+      "date": "2026-01-10",
+      "total": 1,
+      "Anshu": 1,
+      "Kittu": 0
+    },
+    {
+      "date": "2026-01-11",
+      "total": 8,
+      "Anshu": 8,
+      "Kittu": 0
+    },
+    {
+      "date": "2026-01-12",
+      "total": 1,
+      "Anshu": 1,
+      "Kittu": 0
+    },
+    {
+      "date": "2026-01-13",
+      "total": 206,
+      "Anshu": 139,
+      "Kittu": 67
+    },
+    {
+      "date": "2026-01-14",
+      "total": 259,
+      "Anshu": 160,
+      "Kittu": 99
+    },
+    {
+      "date": "2026-01-15",
+      "total": 197,
+      "Anshu": 117,
+      "Kittu": 80
+    },
+    {
+      "date": "2026-01-16",
+      "total": 74,
+      "Anshu": 42,
+      "Kittu": 32
+    },
+    {
+      "date": "2026-01-17",
+      "total": 284,
+      "Anshu": 177,
+      "Kittu": 107
+    },
+    {
+      "date": "2026-01-18",
+      "total": 459,
+      "Anshu": 279,
+      "Kittu": 180
+    },
+    {
+      "date": "2026-01-19",
+      "total": 239,
+      "Anshu": 136,
+      "Kittu": 103
+    },
+    {
+      "date": "2026-01-20",
+      "total": 490,
+      "Anshu": 279,
+      "Kittu": 211
+    },
+    {
+      "date": "2026-01-21",
+      "total": 9,
+      "Anshu": 6,
+      "Kittu": 3
+    },
+    {
+      "date": "2026-01-22",
+      "total": 396,
+      "Anshu": 231,
+      "Kittu": 165
+    },
+    {
+      "date": "2026-01-23",
+      "total": 248,
+      "Anshu": 169,
+      "Kittu": 79
+    },
+    {
+      "date": "2026-01-24",
+      "total": 257,
+      "Anshu": 155,
+      "Kittu": 102
+    },
+    {
+      "date": "2026-01-25",
+      "total": 357,
+      "Anshu": 216,
+      "Kittu": 141
+    },
+    {
+      "date": "2026-01-26",
+      "total": 210,
+      "Anshu": 110,
+      "Kittu": 100
+    },
+    {
+      "date": "2026-01-27",
+      "total": 222,
+      "Anshu": 132,
+      "Kittu": 90
+    },
+    {
+      "date": "2026-01-28",
+      "total": 181,
+      "Anshu": 106,
+      "Kittu": 75
+    },
+    {
+      "date": "2026-01-29",
+      "total": 206,
+      "Anshu": 125,
+      "Kittu": 81
+    },
+    {
+      "date": "2026-01-30",
+      "total": 365,
+      "Anshu": 213,
+      "Kittu": 152
+    },
+    {
+      "date": "2026-01-31",
+      "total": 169,
+      "Anshu": 90,
+      "Kittu": 79
+    },
+    {
+      "date": "2026-02-01",
+      "total": 208,
+      "Anshu": 112,
+      "Kittu": 96
+    },
+    {
+      "date": "2026-02-02",
+      "total": 276,
+      "Anshu": 156,
+      "Kittu": 120
+    },
+    {
+      "date": "2026-02-03",
+      "total": 127,
+      "Anshu": 69,
+      "Kittu": 58
+    },
+    {
+      "date": "2026-02-04",
+      "total": 188,
+      "Anshu": 107,
+      "Kittu": 81
+    },
+    {
+      "date": "2026-02-05",
+      "total": 249,
+      "Anshu": 160,
+      "Kittu": 89
+    },
+    {
+      "date": "2026-02-06",
+      "total": 154,
+      "Anshu": 88,
+      "Kittu": 66
+    },
+    {
+      "date": "2026-02-07",
+      "total": 163,
+      "Anshu": 86,
+      "Kittu": 77
+    },
+    {
+      "date": "2026-02-08",
+      "total": 207,
+      "Anshu": 121,
+      "Kittu": 86
+    },
+    {
+      "date": "2026-02-09",
+      "total": 184,
+      "Anshu": 106,
+      "Kittu": 78
+    },
+    {
+      "date": "2026-02-10",
+      "total": 276,
+      "Anshu": 168,
+      "Kittu": 108
+    },
+    {
+      "date": "2026-02-11",
+      "total": 265,
+      "Anshu": 153,
+      "Kittu": 112
+    },
+    {
+      "date": "2026-02-12",
+      "total": 128,
+      "Anshu": 69,
+      "Kittu": 59
+    },
+    {
+      "date": "2026-02-13",
+      "total": 212,
+      "Anshu": 112,
+      "Kittu": 100
+    },
+    {
+      "date": "2026-02-14",
+      "total": 256,
+      "Anshu": 148,
+      "Kittu": 108
+    },
+    {
+      "date": "2026-02-15",
+      "total": 268,
+      "Anshu": 146,
+      "Kittu": 122
+    },
+    {
+      "date": "2026-02-16",
+      "total": 312,
+      "Anshu": 171,
+      "Kittu": 141
+    },
+    {
+      "date": "2026-02-17",
+      "total": 233,
+      "Anshu": 137,
+      "Kittu": 96
+    },
+    {
+      "date": "2026-02-18",
+      "total": 61,
+      "Anshu": 32,
+      "Kittu": 29
+    },
+    {
+      "date": "2026-02-19",
+      "total": 269,
+      "Anshu": 169,
+      "Kittu": 100
+    },
+    {
+      "date": "2026-02-20",
+      "total": 410,
+      "Anshu": 248,
+      "Kittu": 162
+    },
+    {
+      "date": "2026-02-21",
+      "total": 241,
+      "Anshu": 132,
+      "Kittu": 109
+    },
+    {
+      "date": "2026-02-22",
+      "total": 1,
+      "Anshu": 1,
+      "Kittu": 0
+    },
+    {
+      "date": "2026-02-24",
+      "total": 2,
+      "Anshu": 2,
+      "Kittu": 0
+    },
+    {
+      "date": "2026-02-27",
+      "total": 469,
+      "Anshu": 270,
+      "Kittu": 199
+    },
+    {
+      "date": "2026-02-28",
+      "total": 345,
+      "Anshu": 207,
+      "Kittu": 138
+    },
+    {
+      "date": "2026-03-01",
+      "total": 250,
+      "Anshu": 142,
+      "Kittu": 108
+    },
+    {
+      "date": "2026-03-02",
+      "total": 274,
+      "Anshu": 159,
+      "Kittu": 115
+    },
+    {
+      "date": "2026-03-03",
+      "total": 322,
+      "Anshu": 192,
+      "Kittu": 130
+    },
+    {
+      "date": "2026-03-04",
+      "total": 368,
+      "Anshu": 213,
+      "Kittu": 155
+    },
+    {
+      "date": "2026-03-05",
+      "total": 313,
+      "Anshu": 187,
+      "Kittu": 126
+    },
+    {
+      "date": "2026-03-06",
+      "total": 260,
+      "Anshu": 146,
+      "Kittu": 114
+    },
+    {
+      "date": "2026-03-07",
+      "total": 232,
+      "Anshu": 131,
+      "Kittu": 101
+    },
+    {
+      "date": "2026-03-08",
+      "total": 40,
+      "Anshu": 23,
+      "Kittu": 17
+    },
+    {
+      "date": "2026-03-09",
+      "total": 3,
+      "Anshu": 3,
+      "Kittu": 0
+    },
+    {
+      "date": "2026-03-10",
+      "total": 279,
+      "Anshu": 170,
+      "Kittu": 109
+    },
+    {
+      "date": "2026-03-11",
+      "total": 230,
+      "Anshu": 131,
+      "Kittu": 99
+    },
+    {
+      "date": "2026-03-12",
+      "total": 199,
+      "Anshu": 132,
+      "Kittu": 67
+    },
+    {
+      "date": "2026-03-13",
+      "total": 270,
+      "Anshu": 179,
+      "Kittu": 91
+    },
+    {
+      "date": "2026-03-14",
+      "total": 256,
+      "Anshu": 153,
+      "Kittu": 103
+    },
+    {
+      "date": "2026-03-15",
+      "total": 270,
+      "Anshu": 159,
+      "Kittu": 111
+    },
+    {
+      "date": "2026-03-16",
+      "total": 227,
+      "Anshu": 129,
+      "Kittu": 98
+    },
+    {
+      "date": "2026-03-17",
+      "total": 318,
+      "Anshu": 190,
+      "Kittu": 128
+    },
+    {
+      "date": "2026-03-18",
+      "total": 131,
+      "Anshu": 81,
+      "Kittu": 50
+    },
+    {
+      "date": "2026-03-19",
+      "total": 314,
+      "Anshu": 187,
+      "Kittu": 127
+    },
+    {
+      "date": "2026-03-20",
+      "total": 159,
+      "Anshu": 108,
+      "Kittu": 51
+    },
+    {
+      "date": "2026-03-21",
+      "total": 61,
+      "Anshu": 37,
+      "Kittu": 24
+    },
+    {
+      "date": "2026-03-22",
+      "total": 289,
+      "Anshu": 183,
+      "Kittu": 106
+    },
+    {
+      "date": "2026-03-23",
+      "total": 19,
+      "Anshu": 13,
+      "Kittu": 6
+    },
+    {
+      "date": "2026-03-24",
+      "total": 1,
+      "Anshu": 1,
+      "Kittu": 0
+    },
+    {
+      "date": "2026-03-25",
+      "total": 56,
+      "Anshu": 35,
+      "Kittu": 21
+    },
+    {
+      "date": "2026-03-26",
+      "total": 346,
+      "Anshu": 213,
+      "Kittu": 133
+    },
+    {
+      "date": "2026-03-27",
+      "total": 191,
+      "Anshu": 118,
+      "Kittu": 73
+    },
+    {
+      "date": "2026-03-28",
+      "total": 258,
+      "Anshu": 153,
+      "Kittu": 105
+    },
+    {
+      "date": "2026-03-29",
+      "total": 199,
+      "Anshu": 119,
+      "Kittu": 80
+    },
+    {
+      "date": "2026-03-30",
+      "total": 350,
+      "Anshu": 213,
+      "Kittu": 137
+    },
+    {
+      "date": "2026-03-31",
+      "total": 245,
+      "Anshu": 147,
+      "Kittu": 98
+    },
+    {
+      "date": "2026-04-01",
+      "total": 127,
+      "Anshu": 71,
+      "Kittu": 56
+    },
+    {
+      "date": "2026-04-02",
+      "total": 122,
+      "Anshu": 72,
+      "Kittu": 50
+    },
+    {
+      "date": "2026-04-03",
+      "total": 368,
+      "Anshu": 213,
+      "Kittu": 155
+    },
+    {
+      "date": "2026-04-04",
+      "total": 401,
+      "Anshu": 240,
+      "Kittu": 161
+    },
+    {
+      "date": "2026-04-05",
+      "total": 33,
+      "Anshu": 17,
+      "Kittu": 16
+    },
+    {
+      "date": "2026-04-06",
+      "total": 285,
+      "Anshu": 201,
+      "Kittu": 84
+    },
+    {
+      "date": "2026-04-07",
+      "total": 230,
+      "Anshu": 148,
+      "Kittu": 82
+    },
+    {
+      "date": "2026-04-08",
+      "total": 99,
+      "Anshu": 63,
+      "Kittu": 36
+    },
+    {
+      "date": "2026-04-09",
+      "total": 157,
+      "Anshu": 107,
+      "Kittu": 50
+    },
+    {
+      "date": "2026-04-10",
+      "total": 222,
+      "Anshu": 126,
+      "Kittu": 96
+    },
+    {
+      "date": "2026-04-11",
+      "total": 285,
+      "Anshu": 176,
+      "Kittu": 109
+    },
+    {
+      "date": "2026-04-12",
+      "total": 145,
+      "Anshu": 87,
+      "Kittu": 58
+    },
+    {
+      "date": "2026-04-13",
+      "total": 253,
+      "Anshu": 163,
+      "Kittu": 90
+    },
+    {
+      "date": "2026-04-14",
+      "total": 289,
+      "Anshu": 182,
+      "Kittu": 107
+    },
+    {
+      "date": "2026-04-15",
+      "total": 229,
+      "Anshu": 140,
+      "Kittu": 89
+    },
+    {
+      "date": "2026-04-16",
+      "total": 166,
+      "Anshu": 106,
+      "Kittu": 60
+    },
+    {
+      "date": "2026-04-17",
+      "total": 304,
+      "Anshu": 188,
+      "Kittu": 116
+    },
+    {
+      "date": "2026-04-18",
+      "total": 398,
+      "Anshu": 252,
+      "Kittu": 146
+    },
+    {
+      "date": "2026-04-19",
+      "total": 477,
+      "Anshu": 335,
+      "Kittu": 142
+    },
+    {
+      "date": "2026-04-20",
+      "total": 220,
+      "Anshu": 116,
+      "Kittu": 104
+    },
+    {
+      "date": "2026-04-21",
+      "total": 237,
+      "Anshu": 134,
+      "Kittu": 103
+    },
+    {
+      "date": "2026-04-22",
+      "total": 269,
+      "Anshu": 155,
+      "Kittu": 114
+    },
+    {
+      "date": "2026-04-23",
+      "total": 405,
+      "Anshu": 253,
+      "Kittu": 152
+    },
+    {
+      "date": "2026-04-24",
+      "total": 189,
+      "Anshu": 99,
+      "Kittu": 90
+    },
+    {
+      "date": "2026-04-25",
+      "total": 161,
+      "Anshu": 90,
+      "Kittu": 71
+    },
+    {
+      "date": "2026-04-26",
+      "total": 68,
+      "Anshu": 39,
+      "Kittu": 29
+    },
+    {
+      "date": "2026-04-27",
+      "total": 5,
+      "Anshu": 4,
+      "Kittu": 1
+    },
+    {
+      "date": "2026-04-28",
+      "total": 392,
+      "Anshu": 221,
+      "Kittu": 171
+    },
+    {
+      "date": "2026-04-29",
+      "total": 177,
+      "Anshu": 104,
+      "Kittu": 73
+    },
+    {
+      "date": "2026-04-30",
+      "total": 211,
+      "Anshu": 125,
+      "Kittu": 86
+    },
+    {
+      "date": "2026-05-01",
+      "total": 333,
+      "Anshu": 200,
+      "Kittu": 133
+    },
+    {
+      "date": "2026-05-02",
+      "total": 615,
+      "Anshu": 395,
+      "Kittu": 220
+    },
+    {
+      "date": "2026-05-03",
+      "total": 239,
+      "Anshu": 147,
+      "Kittu": 92
+    },
+    {
+      "date": "2026-05-04",
+      "total": 176,
+      "Anshu": 101,
+      "Kittu": 75
+    },
+    {
+      "date": "2026-05-05",
+      "total": 385,
+      "Anshu": 223,
+      "Kittu": 162
+    },
+    {
+      "date": "2026-05-06",
+      "total": 245,
+      "Anshu": 152,
+      "Kittu": 93
+    },
+    {
+      "date": "2026-05-07",
+      "total": 274,
+      "Anshu": 185,
+      "Kittu": 89
+    },
+    {
+      "date": "2026-05-08",
+      "total": 406,
+      "Anshu": 262,
+      "Kittu": 144
+    },
+    {
+      "date": "2026-05-09",
+      "total": 400,
+      "Anshu": 242,
+      "Kittu": 158
+    },
+    {
+      "date": "2026-05-10",
+      "total": 201,
+      "Anshu": 139,
+      "Kittu": 62
+    },
+    {
+      "date": "2026-05-11",
+      "total": 564,
+      "Anshu": 319,
+      "Kittu": 245
+    },
+    {
+      "date": "2026-05-12",
+      "total": 581,
+      "Anshu": 340,
+      "Kittu": 241
+    },
+    {
+      "date": "2026-05-13",
+      "total": 382,
+      "Anshu": 218,
+      "Kittu": 164
+    },
+    {
+      "date": "2026-05-14",
+      "total": 440,
+      "Anshu": 264,
+      "Kittu": 176
+    },
+    {
+      "date": "2026-05-15",
+      "total": 363,
+      "Anshu": 212,
+      "Kittu": 151
+    },
+    {
+      "date": "2026-05-16",
+      "total": 351,
+      "Anshu": 220,
+      "Kittu": 131
+    },
+    {
+      "date": "2026-05-17",
+      "total": 216,
+      "Anshu": 139,
+      "Kittu": 77
+    },
+    {
+      "date": "2026-05-18",
+      "total": 194,
+      "Anshu": 119,
+      "Kittu": 75
+    },
+    {
+      "date": "2026-05-19",
+      "total": 164,
+      "Anshu": 95,
+      "Kittu": 69
+    },
+    {
+      "date": "2026-05-20",
+      "total": 189,
+      "Anshu": 117,
+      "Kittu": 72
+    },
+    {
+      "date": "2026-05-21",
+      "total": 45,
+      "Anshu": 25,
+      "Kittu": 20
+    },
+    {
+      "date": "2026-05-22",
+      "total": 195,
+      "Anshu": 108,
+      "Kittu": 87
+    },
+    {
+      "date": "2026-05-23",
+      "total": 255,
+      "Anshu": 140,
+      "Kittu": 115
+    },
+    {
+      "date": "2026-05-24",
+      "total": 229,
+      "Anshu": 140,
+      "Kittu": 89
+    },
+    {
+      "date": "2026-05-25",
+      "total": 381,
+      "Anshu": 231,
+      "Kittu": 150
+    },
+    {
+      "date": "2026-05-26",
+      "total": 543,
+      "Anshu": 322,
+      "Kittu": 221
+    },
+    {
+      "date": "2026-05-27",
+      "total": 618,
+      "Anshu": 381,
+      "Kittu": 237
+    },
+    {
+      "date": "2026-05-28",
+      "total": 626,
+      "Anshu": 387,
+      "Kittu": 239
+    },
+    {
+      "date": "2026-05-29",
+      "total": 290,
+      "Anshu": 176,
+      "Kittu": 114
+    },
+    {
+      "date": "2026-05-30",
+      "total": 175,
+      "Anshu": 101,
+      "Kittu": 74
+    },
+    {
+      "date": "2026-05-31",
+      "total": 574,
+      "Anshu": 355,
+      "Kittu": 219
+    },
+    {
+      "date": "2026-06-01",
+      "total": 232,
+      "Anshu": 139,
+      "Kittu": 93
+    },
+    {
+      "date": "2026-06-02",
+      "total": 297,
+      "Anshu": 183,
+      "Kittu": 114
+    },
+    {
+      "date": "2026-06-03",
+      "total": 347,
+      "Anshu": 203,
+      "Kittu": 144
+    },
+    {
+      "date": "2026-06-04",
+      "total": 463,
+      "Anshu": 272,
+      "Kittu": 191
+    },
+    {
+      "date": "2026-06-05",
+      "total": 417,
+      "Anshu": 271,
+      "Kittu": 146
+    },
+    {
+      "date": "2026-06-06",
+      "total": 284,
+      "Anshu": 186,
+      "Kittu": 98
+    },
+    {
+      "date": "2026-06-07",
+      "total": 594,
+      "Anshu": 373,
+      "Kittu": 221
+    },
+    {
+      "date": "2026-06-08",
+      "total": 410,
+      "Anshu": 252,
+      "Kittu": 158
+    }
+  ],
+  "happiest_memories": [
+    {
+      "sender": "Kittu",
+      "text": "Good night 💞✨☺️",
+      "sentiment": 0.44,
+      "timestamp": "2026-05-29T22:13:13"
+    },
+    {
+      "sender": "Anshu",
+      "text": "Good Morning Miss💖✨",
+      "sentiment": 0.44,
+      "timestamp": "2026-02-21T09:54:06"
+    },
+    {
+      "sender": "Kittu",
+      "text": "Love you too 💞✨",
+      "sentiment": 0.637,
+      "timestamp": "2025-12-28T22:42:13"
+    },
+    {
+      "sender": "Anshu",
+      "text": "Hayee☺️💖✨ Ho to bahut pyare dekhte hi mn krta lad krlu bahut saree☺️",
+      "sentiment": 0.0,
+      "timestamp": "2026-01-19T22:23:32"
+    },
+    {
+      "sender": "Kittu",
+      "text": "Tata ✨💖",
+      "sentiment": 0.0,
+      "timestamp": "2026-03-28T23:29:23"
+    },
+    {
+      "sender": "Anshu",
+      "text": "Tata ✨💖",
+      "sentiment": 0.0,
+      "timestamp": "2026-03-26T23:19:25"
+    },
+    {
+      "sender": "Kittu",
+      "text": "Love you too bacchhu 💞✨",
+      "sentiment": 0.637,
+      "timestamp": "2026-03-20T12:43:43"
+    },
+    {
+      "sender": "Kittu",
+      "text": "Love you too mera bachaa 💞✨☺️",
+      "sentiment": 0.637,
+      "timestamp": "2026-03-01T23:23:26"
+    },
+    {
+      "sender": "Kittu",
+      "text": "Love you too 💞✨",
+      "sentiment": 0.637,
+      "timestamp": "2026-01-18T22:30:06"
+    },
+    {
+      "sender": "Kittu",
+      "text": "Good morning 💖✨",
+      "sentiment": 0.44,
+      "timestamp": "2026-02-20T08:14:00"
+    }
+  ],
+  "topic_clusters": [
+    {
+      "topic_id": 2,
+      "keywords": [
+        "nhi",
+        "kuch",
+        "koii",
+        "kuch nhi",
+        "beta",
+        "bat",
+        "rha"
+      ],
+      "label": "nhi, kuch, koii",
+      "weight": 4.488
+    },
+    {
+      "topic_id": 3,
+      "keywords": [
+        "kya",
+        "rhe",
+        "huva",
+        "kya huva",
+        "khaya",
+        "kya khaya",
+        "kya rhe"
+      ],
+      "label": "kya, rhe, huva",
+      "weight": 3.4141
+    },
+    {
+      "topic_id": 4,
+      "keywords": [
+        "hai",
+        "thik",
+        "shi",
+        "shi hai",
+        "thik hai",
+        "beta",
+        "bahut"
+      ],
+      "label": "hai, thik, shi",
+      "weight": 3.2681
+    },
+    {
+      "topic_id": 1,
+      "keywords": [
+        "night",
+        "good night",
+        "good",
+        "betaa",
+        "bcha",
+        "betuu",
+        "betu"
+      ],
+      "label": "night, good night, good",
+      "weight": 2.7645
+    },
+    {
+      "topic_id": 5,
+      "keywords": [
+        "bhi",
+        "fir",
+        "tha",
+        "mujhe",
+        "mst",
+        "thi",
+        "bahut"
+      ],
+      "label": "bhi, fir, tha",
+      "weight": 2.5597
+    },
+    {
+      "topic_id": 6,
+      "keywords": [
+        "morning",
+        "good morning",
+        "good",
+        "morning kitttu",
+        "kitttu",
+        "miss",
+        "beta"
+      ],
+      "label": "morning, good morning, good",
+      "weight": 2.3256
+    }
+  ],
+  "special_events": [
+    {
+      "event_type": "call_night",
+      "date": "2026-05-14",
+      "mentions": 16,
+      "highlight": "Ni call pe",
+      "timestamp": "2026-05-14T21:57:02"
+    },
+    {
+      "event_type": "call_night",
+      "date": "2026-05-28",
+      "mentions": 16,
+      "highlight": "Yrrr thodi der baad bat krte phone charge ho jae",
+      "timestamp": "2026-05-28T23:06:29"
+    },
+    {
+      "event_type": "call_night",
+      "date": "2026-05-11",
+      "mentions": 15,
+      "highlight": "Me itni jldi nahayi shubh ne phone le liya tha fir deta bhi ni charge bhi km he to fir nahake ke liya phone",
+      "timestamp": "2026-05-11T23:26:12"
+    },
+    {
+      "event_type": "call_night",
+      "date": "2026-04-23",
+      "mentions": 14,
+      "highlight": "Kittu Me ja rha beta sone hogya mene kuch que kiye ab dekhte kl kya hota hai , Betu video call me ap bahut mst lg rhe the ☺️",
+      "timestamp": "2026-04-23T22:55:48"
+    },
+    {
+      "event_type": "care_support",
+      "date": "2026-01-18",
+      "mentions": 12,
+      "highlight": "Ach han sorry",
+      "timestamp": "2026-01-18T22:30:06"
+    },
+    {
+      "event_type": "care_support",
+      "date": "2026-06-03",
+      "mentions": 10,
+      "highlight": "Lovee Uh bchaa ☺️💖✨🤗",
+      "timestamp": "2026-06-03T23:13:37"
+    },
+    {
+      "event_type": "care_support",
+      "date": "2026-05-27",
+      "mentions": 10,
+      "highlight": "Acha but me ni dikhau gi ap ko dekhugi bss",
+      "timestamp": "2026-05-27T23:34:46"
+    },
+    {
+      "event_type": "study_work",
+      "date": "2026-05-02",
+      "mentions": 9,
+      "highlight": "Exam khtmm 🥳🥳🥳🥳",
+      "timestamp": "2026-05-02T23:29:55"
+    },
+    {
+      "event_type": "care_support",
+      "date": "2026-01-02",
+      "mentions": 9,
+      "highlight": "Nhii huve aj likhugi",
+      "timestamp": "2026-01-02T23:10:23"
+    },
+    {
+      "event_type": "study_work",
+      "date": "2026-02-05",
+      "mentions": 8,
+      "highlight": "Meri class me",
+      "timestamp": "2026-02-05T23:25:50"
+    },
+    {
+      "event_type": "study_work",
+      "date": "2026-02-28",
+      "mentions": 8,
+      "highlight": "Thik he ready ho jao ap kb jaoge exam dene",
+      "timestamp": "2026-02-28T22:59:18"
+    },
+    {
+      "event_type": "study_work",
+      "date": "2026-03-19",
+      "mentions": 8,
+      "highlight": "Chlo class chlo mere sath 😁",
+      "timestamp": "2026-03-19T23:12:24"
+    },
+    {
+      "event_type": "birthday",
+      "date": "2026-03-16",
+      "mentions": 7,
+      "highlight": "Hn beta apko m gift kr dunga apni sagai k bad mst sa apki choice ka usse pehle shyd ap le loge fir bhi bad m apn le lenge ach sa",
+      "timestamp": "2026-03-16T22:32:49"
+    },
+    {
+      "event_type": "festival",
+      "date": "2026-03-16",
+      "mentions": 7,
+      "highlight": "Aj to holi kheloge",
+      "timestamp": "2026-03-16T22:48:11"
+    },
+    {
+      "event_type": "birthday",
+      "date": "2026-05-29",
+      "mentions": 4,
+      "highlight": "Mummy ne cup cake liya bolri koii ni khara is ko mene kaha ap kha lo to vo cake panni me ata or andr paper lga hota mummy ne hta ya ni uske sath khane lgi😁😂",
+      "timestamp": "2026-05-29T22:12:03"
+    },
+    {
+      "event_type": "festival",
+      "date": "2026-03-03",
+      "mentions": 4,
+      "highlight": "Kittu holi ke Darshan kr ke bhi agya subh",
+      "timestamp": "2026-03-03T22:39:38"
+    },
+    {
+      "event_type": "travel",
+      "date": "2026-05-06",
+      "mentions": 4,
+      "highlight": "Train kb ayegi",
+      "timestamp": "2026-05-06T23:04:14"
+    },
+    {
+      "event_type": "birthday",
+      "date": "2026-03-01",
+      "mentions": 3,
+      "highlight": "Sheli ke birthday ki",
+      "timestamp": "2026-03-01T23:18:38"
+    },
+    {
+      "event_type": "birthday",
+      "date": "2026-05-28",
+      "mentions": 3,
+      "highlight": "Ek bar Anurag ka birthday tha",
+      "timestamp": "2026-05-28T15:56:30"
+    },
+    {
+      "event_type": "festival",
+      "date": "2026-03-02",
+      "mentions": 3,
+      "highlight": "Aj holi jali apke vha ?",
+      "timestamp": "2026-03-02T23:06:58"
+    },
+    {
+      "event_type": "festival",
+      "date": "2026-03-15",
+      "mentions": 3,
+      "highlight": "Kl to Holi khelege hmare yha or prso Hinglaj jyanti",
+      "timestamp": "2026-03-15T22:24:32"
+    },
+    {
+      "event_type": "food_dates",
+      "date": "2026-01-16",
+      "mentions": 3,
+      "highlight": "Acha chaii ya coffee",
+      "timestamp": "2026-01-16T21:43:42"
+    },
+    {
+      "event_type": "travel",
+      "date": "2026-01-05",
+      "mentions": 2,
+      "highlight": "Train late hogai abhi pahuchi 7 bje",
+      "timestamp": "2026-01-05T21:42:19"
+    },
+    {
+      "event_type": "travel",
+      "date": "2026-02-28",
+      "mentions": 2,
+      "highlight": "Pr hai train",
+      "timestamp": "2026-02-28T23:05:29"
+    },
+    {
+      "event_type": "travel",
+      "date": "2026-01-04",
+      "mentions": 2,
+      "highlight": "Abhi just train chli hai",
+      "timestamp": "2026-01-04T21:40:27"
+    },
+    {
+      "event_type": "food_dates",
+      "date": "2026-01-23",
+      "mentions": 2,
+      "highlight": "Coffee pi rha",
+      "timestamp": "2026-01-23T22:21:58"
+    },
+    {
+      "event_type": "food_dates",
+      "date": "2026-01-05",
+      "mentions": 2,
+      "highlight": "Abhi khana kha kr coffee",
+      "timestamp": "2026-01-05T21:38:48"
+    },
+    {
+      "event_type": "food_dates",
+      "date": "2026-01-18",
+      "mentions": 2,
+      "highlight": "Cold coffee pi lu ?",
+      "timestamp": "2026-01-18T22:08:51"
+    }
+  ],
+  "day_insights": {
+    "top_message_days": [
+      {
+        "date": "2026-05-28",
+        "message_count": 626
+      },
+      {
+        "date": "2026-05-27",
+        "message_count": 618
+      },
+      {
+        "date": "2026-05-02",
+        "message_count": 615
+      },
+      {
+        "date": "2026-06-07",
+        "message_count": 594
+      },
+      {
+        "date": "2026-05-12",
+        "message_count": 581
+      },
+      {
+        "date": "2026-05-31",
+        "message_count": 574
+      },
+      {
+        "date": "2026-05-11",
+        "message_count": 564
+      }
+    ],
+    "weekday_distribution": [
+      {
+        "weekday": "Monday",
+        "count": 5210
+      },
+      {
+        "weekday": "Tuesday",
+        "count": 6314
+      },
+      {
+        "weekday": "Wednesday",
+        "count": 4701
+      },
+      {
+        "weekday": "Thursday",
+        "count": 6351
+      },
+      {
+        "weekday": "Friday",
+        "count": 6314
+      },
+      {
+        "weekday": "Saturday",
+        "count": 6283
+      },
+      {
+        "weekday": "Sunday",
+        "count": 5684
+      }
+    ],
+    "longest_daily_streak": {
+      "length_days": 102,
+      "start": "2026-02-27",
+      "end": "2026-06-08"
+    }
+  },
+  "monthly_mood": [
+    {
+      "month": "2025-12",
+      "messages": 1164,
+      "avg_sentiment": 0.0327
+    },
+    {
+      "month": "2026-01",
+      "messages": 6842,
+      "avg_sentiment": 0.0185
+    },
+    {
+      "month": "2026-02",
+      "messages": 5504,
+      "avg_sentiment": 0.0291
+    },
+    {
+      "month": "2026-03",
+      "messages": 6730,
+      "avg_sentiment": 0.0258
+    },
+    {
+      "month": "2026-04",
+      "messages": 6924,
+      "avg_sentiment": 0.0262
+    },
+    {
+      "month": "2026-05",
+      "messages": 10649,
+      "avg_sentiment": 0.0207
+    },
+    {
+      "month": "2026-06",
+      "messages": 3044,
+      "avg_sentiment": 0.0262
+    }
+  ],
+  "response_patterns": {
+    "overall_avg_reply_minutes": 4.97,
+    "by_sender": [
+      {
+        "sender": "Anshu",
+        "avg_reply_minutes": 3.64,
+        "median_reply_minutes": 0.18,
+        "samples": 12203
+      },
+      {
+        "sender": "Kittu",
+        "avg_reply_minutes": 6.29,
+        "median_reply_minutes": 0.22,
+        "samples": 12185
+      }
+    ]
+  },
+  "emotional_highlights": [
+    {
+      "date": "2026-04-05",
+      "avg_sentiment": 0.1019,
+      "messages": 33
+    },
+    {
+      "date": "2026-04-26",
+      "avg_sentiment": 0.0958,
+      "messages": 68
+    },
+    {
+      "date": "2026-05-21",
+      "avg_sentiment": 0.0934,
+      "messages": 45
+    },
+    {
+      "date": "2026-03-08",
+      "avg_sentiment": 0.0889,
+      "messages": 40
+    },
+    {
+      "date": "2026-02-18",
+      "avg_sentiment": 0.0857,
+      "messages": 61
+    },
+    {
+      "date": "2025-12-31",
+      "avg_sentiment": 0.0712,
+      "messages": 60
+    },
+    {
+      "date": "2026-02-07",
+      "avg_sentiment": 0.0594,
+      "messages": 163
+    }
+  ],
+  "unknown_sender_analysis": {
+    "unknown_count": 0,
+    "unknown_share_percent": 0.0,
+    "resolution_breakdown": {
+      "from_name": 24712,
+      "from_previous_message": 15497,
+      "from_initials": 648
+    },
+    "top_files_with_unknown": [],
+    "classification_note": "Unknown mostly appears when Telegram omits sender labels in grouped blocks; parser now infers via initials and previous speaker."
+  },
+  "modeling": {
+    "topic_model": "tfidf+nmf",
+    "sentiment_model": "nltk-vader"
+  }
+}
