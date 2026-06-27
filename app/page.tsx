@@ -144,39 +144,35 @@ function formatEventName(input: string): string {
     .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
     .join(" ");
 }
-
-// ✨ MIND-BLOWING INTERACTIVE SCRAPPER COMPONENT ✨
+// ✨ OPTIMIZED INTERACTIVE SCRAPPER ✨
 function ClickableScrapper({ isHeart, initialLeft, delay, duration }: { isHeart: boolean, initialLeft: number, delay: number, duration: number }) {
   const [popped, setPopped] = useState(false);
 
   if (popped) {
     return (
       <motion.div
-        className="absolute z-[100] text-4xl pointer-events-none drop-shadow-[0_0_25px_rgba(255,255,255,0.9)]"
+        className="absolute z-[100] text-xl pointer-events-none drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"
         style={{ left: `${initialLeft}%`, top: '40%' }}
         initial={{ scale: 0.5, opacity: 1 }}
         animate={{ 
-          scale: [1, 2.5, 3.5], 
-          opacity: [1, 0.9, 0], 
-          rotate: [0, isHeart ? -45 : 90, isHeart ? -90 : 180] 
+          scale: [1, 2], 
+          opacity: [1, 0]
         }}
-        transition={{ duration: 2, ease: "easeOut" }}
+        transition={{ duration: 1, ease: "easeOut" }}
       >
-        {isHeart ? "💖✨" : "✨💫"}
+        {isHeart ? "💖" : "✨"}
       </motion.div>
     );
   }
 
   return (
     <motion.div
-      className={`absolute ${isHeart ? "text-pink-400/80 drop-shadow-[0_0_12px_rgba(236,72,153,0.9)]" : "text-cyan-300/80 drop-shadow-[0_0_12px_rgba(57,240,255,0.9)]"} text-3xl cursor-pointer pointer-events-auto z-[60]`}
+      className={`absolute ${isHeart ? "text-pink-400/50" : "text-cyan-300/50"} text-sm cursor-pointer pointer-events-auto z-[60]`}
       style={{ left: `${initialLeft}%`, top: "-10%" }}
-      initial={{ opacity: 0, y: "-10vh", rotate: 0 }}
+      initial={{ opacity: 0 }}
       animate={{
         y: ["0vh", "110vh"],
-        x: [0, Math.random() * 150 - 75, Math.random() * 150 - 75],
-        rotate: [0, 360],
-        opacity: [0, 1, 1, 0]
+        opacity: [0, 0.6, 0]
       }}
       transition={{
         duration,
@@ -184,12 +180,8 @@ function ClickableScrapper({ isHeart, initialLeft, delay, duration }: { isHeart:
         repeat: Infinity,
         ease: "linear"
       }}
-      onClick={(e) => {
-        setPopped(true);
-        setTimeout(() => setPopped(false), 19000); // Respawns after 8 seconds!
-      }}
-      whileHover={{ scale: 2.2, textShadow: "0px 0px 30px rgb(255,255,255)" }}
-      whileTap={{ scale: 0.8 }}
+      onClick={() => setPopped(true)}
+      whileHover={{ scale: 1.5, opacity: 1 }}
     >
       {isHeart ? "💖" : "✨"}
     </motion.div>
@@ -197,16 +189,17 @@ function ClickableScrapper({ isHeart, initialLeft, delay, duration }: { isHeart:
 }
 
 function FloatingScrappersForHer() {
-  const elements = Array.from({ length: 30 }); // Increased density
+  // Reduced density significantly
+  const elements = Array.from({ length: 8 }); 
   return (
     <div className="pointer-events-none fixed inset-0 z-[60] overflow-hidden">
       {elements.map((_, i) => (
         <ClickableScrapper 
           key={i}
-          isHeart={i % 3 === 0}
+          isHeart={i % 2 === 0}
           initialLeft={Math.random() * 100}
-          delay={Math.random() * 10}
-          duration={Math.random() * 15 + 12}
+          delay={Math.random() * 15}
+          duration={Math.random() * 20 + 20} // Much slower duration
         />
       ))}
     </div>
@@ -216,56 +209,114 @@ function FloatingScrappersForHer() {
 // ✨ THE INTERACTIVE GUIDE BANNER ✨
 function InteractiveScrapperGuide() {
   const [visible, setVisible] = useState(true);
+  // Auto-hide after 5 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => setVisible(false), 5000);
+    return () => clearTimeout(timer);
+  }, []);
+  
   return (
     <AnimatePresence>
       {visible && (
         <motion.div
-          initial={{ opacity: 0, y: -50 }}
+          initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0, y: -50, scale: 0.8 }}
-          transition={{ type: "spring", stiffness: 200, damping: 20, delay: 2.5 }}
-          className="fixed top-6 left-1/2 -translate-x-1/2 z-[70] pointer-events-auto flex flex-col items-center gap-2 w-[90%] max-w-sm"
+          exit={{ opacity: 0 }}
+          className="fixed top-6 z-[70] w-full text-center pointer-events-none"
         >
-          <motion.div 
-            className="rounded-full border border-pink-500/50 bg-black/70 px-5 py-3 text-sm text-pink-100 shadow-[0_0_25px_rgba(236,72,153,0.4)] backdrop-blur-xl flex items-center justify-between w-full cursor-pointer"
-            whileHover={{ scale: 1.05, boxShadow: "0 0 35px rgba(236,72,153,0.7)" }}
-            onClick={() => setVisible(false)}
-          >
-            <div className="flex items-center gap-3">
-              <span className="relative flex h-3 w-3">
-                <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
-                <span className="relative inline-flex rounded-full h-3 w-3 bg-pink-500 shadow-[0_0_10px_#ec4899]"></span>
-              </span>
-              <span className="font-medium tracking-wide">heart pr click kro✨</span>
-            </div>
-            <span className="text-slate-400 text-xs hover:text-white transition-colors uppercase tracking-widest bg-white/10 px-2 py-1 rounded-full">Got it</span>
-          </motion.div>
+          <span className="bg-black/30 backdrop-blur-md px-4 py-2 rounded-full text-[10px] text-white/50 border border-white/5 uppercase tracking-widest">
+            Tap the tiny sparks! ✨
+          </span>
         </motion.div>
       )}
     </AnimatePresence>
   );
+}// ✨ OPTIMIZED INTERACTIVE SCRAPPER ✨
+function ClickableScrapper({ isHeart, initialLeft, delay, duration }: { isHeart: boolean, initialLeft: number, delay: number, duration: number }) {
+  const [popped, setPopped] = useState(false);
+
+  if (popped) {
+    return (
+      <motion.div
+        className="absolute z-[100] text-xl pointer-events-none drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"
+        style={{ left: `${initialLeft}%`, top: '40%' }}
+        initial={{ scale: 0.5, opacity: 1 }}
+        animate={{ 
+          scale: [1, 2], 
+          opacity: [1, 0]
+        }}
+        transition={{ duration: 1, ease: "easeOut" }}
+      >
+        {isHeart ? "💖" : "✨"}
+      </motion.div>
+    );
+  }
+
+  return (
+    <motion.div
+      className={`absolute ${isHeart ? "text-pink-400/50" : "text-cyan-300/50"} text-sm cursor-pointer pointer-events-auto z-[60]`}
+      style={{ left: `${initialLeft}%`, top: "-10%" }}
+      initial={{ opacity: 0 }}
+      animate={{
+        y: ["0vh", "110vh"],
+        opacity: [0, 0.6, 0]
+      }}
+      transition={{
+        duration,
+        delay,
+        repeat: Infinity,
+        ease: "linear"
+      }}
+      onClick={() => setPopped(true)}
+      whileHover={{ scale: 1.5, opacity: 1 }}
+    >
+      {isHeart ? "💖" : "✨"}
+    </motion.div>
+  );
 }
 
-// Enhanced AnimatedSection with fluid easing
-function AnimatedSection({
-  children,
-  className,
-  delay = 0
-}: {
-  children: ReactNode;
-  className: string;
-  delay?: number;
-}) {
+function FloatingScrappersForHer() {
+  // Reduced density significantly
+  const elements = Array.from({ length: 8 }); 
   return (
-    <motion.section
-      initial={{ opacity: 0, y: 40, scale: 0.94 }}
-      whileInView={{ opacity: 1, y: 0, scale: 1 }}
-      viewport={{ once: true, amount: 0.15 }}
-      transition={{ duration: 0.9, delay, ease: [0.17, 0.55, 0.55, 1] }}
-      className={className}
-    >
-      {children}
-    </motion.section>
+    <div className="pointer-events-none fixed inset-0 z-[60] overflow-hidden">
+      {elements.map((_, i) => (
+        <ClickableScrapper 
+          key={i}
+          isHeart={i % 2 === 0}
+          initialLeft={Math.random() * 100}
+          delay={Math.random() * 15}
+          duration={Math.random() * 20 + 20} // Much slower duration
+        />
+      ))}
+    </div>
+  );
+}
+
+// ✨ THE INTERACTIVE GUIDE BANNER ✨
+function InteractiveScrapperGuide() {
+  const [visible, setVisible] = useState(true);
+  // Auto-hide after 5 seconds
+  useEffect(() => {
+    const timer = setTimeout(() => setVisible(false), 5000);
+    return () => clearTimeout(timer);
+  }, []);
+  
+  return (
+    <AnimatePresence>
+      {visible && (
+        <motion.div
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          exit={{ opacity: 0 }}
+          className="fixed top-6 z-[70] w-full text-center pointer-events-none"
+        >
+          <span className="bg-black/30 backdrop-blur-md px-4 py-2 rounded-full text-[10px] text-white/50 border border-white/5 uppercase tracking-widest">
+            Tap the tiny sparks! ✨
+          </span>
+        </motion.div>
+      )}
+    </AnimatePresence>
   );
 }
 
@@ -823,6 +874,17 @@ export default function HomePage() {
                 >
                   Band Karo
                 </motion.button>
+              
+                // Inside the memory modal return:
+<motion.button
+  type="button"
+  onClick={() => setMemoryOpen(false)}
+  whileHover={{ backgroundColor: "rgba(255,255,255,0.15)", scale: 1.05 }}
+  whileTap={{ scale: 0.95 }}
+  className="mono w-full mt-8 rounded-xl border border-slate-500/50 bg-black/40 px-6 py-4 text-sm font-bold uppercase tracking-widest text-slate-200 transition-all hover:border-slate-400"
+>
+  Close
+</motion.button>
               </div>
             </motion.div>
           </motion.div>
