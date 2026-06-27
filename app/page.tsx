@@ -190,7 +190,15 @@ function ClickableScrapper({ isHeart, initialLeft, delay, duration }: { isHeart:
 }
 
 function FloatingScrappersForHer() {
-  // Reduced density and increased timing for subtler effect
+  const [isVisible, setIsVisible] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => setIsVisible(false), 10000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!isVisible) return null;
+
   const elements = Array.from({ length: 4 }); 
   return (
     <div className="pointer-events-none fixed inset-0 z-[60] overflow-hidden">
@@ -199,8 +207,8 @@ function FloatingScrappersForHer() {
           key={i}
           isHeart={i % 2 === 0}
           initialLeft={Math.random() * 100}
-          delay={Math.random() * 25} // Increased delay range
-          duration={Math.random() * 10 + 30} // Slower duration
+          delay={Math.random() * 25}
+          duration={Math.random() * 10 + 30}
         />
       ))}
     </div>
