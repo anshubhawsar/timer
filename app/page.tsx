@@ -144,6 +144,7 @@ function formatEventName(input: string): string {
     .map((part) => part.charAt(0).toUpperCase() + part.slice(1))
     .join(" ");
 }
+
 // ✨ OPTIMIZED INTERACTIVE SCRAPPER ✨
 function ClickableScrapper({ isHeart, initialLeft, delay, duration }: { isHeart: boolean, initialLeft: number, delay: number, duration: number }) {
   const [popped, setPopped] = useState(false);
@@ -189,8 +190,8 @@ function ClickableScrapper({ isHeart, initialLeft, delay, duration }: { isHeart:
 }
 
 function FloatingScrappersForHer() {
-  // Reduced density significantly
-  const elements = Array.from({ length: 8 }); 
+  // Reduced density and increased timing for subtler effect
+  const elements = Array.from({ length: 4 }); 
   return (
     <div className="pointer-events-none fixed inset-0 z-[60] overflow-hidden">
       {elements.map((_, i) => (
@@ -198,95 +199,8 @@ function FloatingScrappersForHer() {
           key={i}
           isHeart={i % 2 === 0}
           initialLeft={Math.random() * 100}
-          delay={Math.random() * 15}
-          duration={Math.random() * 20 + 20} // Much slower duration
-        />
-      ))}
-    </div>
-  );
-}
-
-// ✨ THE INTERACTIVE GUIDE BANNER ✨
-function InteractiveScrapperGuide() {
-  const [visible, setVisible] = useState(true);
-  // Auto-hide after 5 seconds
-  useEffect(() => {
-    const timer = setTimeout(() => setVisible(false), 5000);
-    return () => clearTimeout(timer);
-  }, []);
-  
-  return (
-    <AnimatePresence>
-      {visible && (
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0 }}
-          className="fixed top-6 z-[70] w-full text-center pointer-events-none"
-        >
-          <span className="bg-black/30 backdrop-blur-md px-4 py-2 rounded-full text-[10px] text-white/50 border border-white/5 uppercase tracking-widest">
-            Tap the tiny sparks! ✨
-          </span>
-        </motion.div>
-      )}
-    </AnimatePresence>
-  );
-}// ✨ OPTIMIZED INTERACTIVE SCRAPPER ✨
-function ClickableScrapper({ isHeart, initialLeft, delay, duration }: { isHeart: boolean, initialLeft: number, delay: number, duration: number }) {
-  const [popped, setPopped] = useState(false);
-
-  if (popped) {
-    return (
-      <motion.div
-        className="absolute z-[100] text-xl pointer-events-none drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"
-        style={{ left: `${initialLeft}%`, top: '40%' }}
-        initial={{ scale: 0.5, opacity: 1 }}
-        animate={{ 
-          scale: [1, 2], 
-          opacity: [1, 0]
-        }}
-        transition={{ duration: 1, ease: "easeOut" }}
-      >
-        {isHeart ? "💖" : "✨"}
-      </motion.div>
-    );
-  }
-
-  return (
-    <motion.div
-      className={`absolute ${isHeart ? "text-pink-400/50" : "text-cyan-300/50"} text-sm cursor-pointer pointer-events-auto z-[60]`}
-      style={{ left: `${initialLeft}%`, top: "-10%" }}
-      initial={{ opacity: 0 }}
-      animate={{
-        y: ["0vh", "110vh"],
-        opacity: [0, 0.6, 0]
-      }}
-      transition={{
-        duration,
-        delay,
-        repeat: Infinity,
-        ease: "linear"
-      }}
-      onClick={() => setPopped(true)}
-      whileHover={{ scale: 1.5, opacity: 1 }}
-    >
-      {isHeart ? "💖" : "✨"}
-    </motion.div>
-  );
-}
-
-function FloatingScrappersForHer() {
-  // Reduced density significantly
-  const elements = Array.from({ length: 8 }); 
-  return (
-    <div className="pointer-events-none fixed inset-0 z-[60] overflow-hidden">
-      {elements.map((_, i) => (
-        <ClickableScrapper 
-          key={i}
-          isHeart={i % 2 === 0}
-          initialLeft={Math.random() * 100}
-          delay={Math.random() * 15}
-          duration={Math.random() * 20 + 20} // Much slower duration
+          delay={Math.random() * 25} // Increased delay range
+          duration={Math.random() * 10 + 30} // Slower duration
         />
       ))}
     </div>
@@ -506,7 +420,7 @@ export default function HomePage() {
           </div>
         </motion.section>
 
-        <AnimatedSection className="grid gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
+        <section className="grid gap-6 lg:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)]">
           <motion.div 
             className="glass-card rounded-3xl p-6 md:p-8"
             whileHover={mindblowingHover}
@@ -570,9 +484,9 @@ export default function HomePage() {
               </div>
             </div>
           </motion.div>
-        </AnimatedSection>
+        </section>
 
-        <AnimatedSection className="glass-card rounded-3xl p-6 md:p-8">
+        <section className="glass-card rounded-3xl p-6 md:p-8">
           <motion.div whileHover={mindblowingHover} className="w-full h-full rounded-3xl">
             <h2 className="text-3xl font-semibold">Chat Timeline</h2>
             <p className="mono mt-2 text-xs uppercase tracking-[0.2em] text-slate-400">
@@ -604,9 +518,9 @@ export default function HomePage() {
               </ResponsiveContainer>
             </div>
           </motion.div>
-        </AnimatedSection>
+        </section>
 
-        <AnimatedSection className="grid gap-6 md:grid-cols-2">
+        <section className="grid gap-6 md:grid-cols-2">
           <motion.div 
             className="glass-card rounded-3xl p-6 md:p-8"
             whileHover={mindblowingHover}
@@ -666,9 +580,9 @@ export default function HomePage() {
               ))}
             </div>
           </motion.div>
-        </AnimatedSection>
+        </section>
 
-        <AnimatedSection className="glass-card rounded-3xl p-6 md:p-8">
+        <section className="glass-card rounded-3xl p-6 md:p-8">
           <motion.div whileHover={mindblowingHover} className="w-full h-full rounded-3xl">
             <h2 className="text-3xl font-semibold">Monthly Mood aur Intensity</h2>
             <p className="mono mt-2 text-xs uppercase tracking-[0.2em] text-slate-400">
@@ -689,9 +603,9 @@ export default function HomePage() {
               </ResponsiveContainer>
             </div>
           </motion.div>
-        </AnimatedSection>
+        </section>
 
-        <AnimatedSection className="grid gap-6 md:grid-cols-2">
+        <section className="grid gap-6 md:grid-cols-2">
           <motion.div 
             className="glass-card rounded-3xl p-6 md:p-8"
             whileHover={mindblowingHover}
@@ -777,9 +691,9 @@ export default function HomePage() {
               </div>
             </div>
           </motion.div>
-        </AnimatedSection>
+        </section>
 
-        <AnimatedSection className="glass-card rounded-3xl p-6 md:p-8">
+        <section className="glass-card rounded-3xl p-6 md:p-8">
           <motion.div whileHover={mindblowingHover} className="w-full h-full rounded-3xl">
             <h3 className="text-3xl font-semibold">Emotional High-Point Days</h3>
             <p className="mono mt-2 text-xs uppercase tracking-[0.2em] text-slate-400">
@@ -797,30 +711,24 @@ export default function HomePage() {
               </ResponsiveContainer>
             </div>
           </motion.div>
-        </AnimatedSection>
+        </section>
 
-        <AnimatedSection className="scroll-mt-8" delay={0.05}>
-          <PhotoGallery
-            photos={galleryPhotos}
-            title="Our Happiest Moments"
-            subtitle="Photos arranged in one proper gallery"
-          />
-        </AnimatedSection>
+        <PhotoGallery
+          photos={galleryPhotos}
+          title="Our Happiest Moments"
+          subtitle="Photos arranged in one proper gallery"
+        />
 
-        <AnimatedSection className="scroll-mt-8" delay={0.05}>
-          <WeTogetherSection
-            title="We Together"
-            subtitle="Our journey in pictures"
-          />
-        </AnimatedSection>
+        <WeTogetherSection
+          title="We Together"
+          subtitle="Our journey in pictures"
+        />
 
-        <AnimatedSection className="scroll-mt-8" delay={0.05}>
-          <PositiveChatOverlay
-            backgroundSrc={kittuPhotos[0] ?? "/kittuimgs/photo_2026-06-24_19-15-17.jpg"}
-            title="From our happiest moments"
-            message="Every message, every smile - positivity looks better when it is ours"
-          />
-        </AnimatedSection>
+        <PositiveChatOverlay
+          backgroundSrc={kittuPhotos[0] ?? "/kittuimgs/photo_2026-06-24_19-15-17.jpg"}
+          title="From our happiest moments"
+          message="Every message, every smile - positivity looks better when it is ours"
+        />
       </div>
 
       <motion.button
@@ -830,7 +738,7 @@ export default function HomePage() {
         whileTap={{ scale: 0.9 }}
         className="fixed bottom-6 right-6 z-[80] max-w-[calc(100vw-3rem)] rounded-full border border-cyanGlow/60 bg-black/90 px-6 py-4 text-sm font-bold text-cyanGlow shadow-[0_0_20px_rgba(57,240,255,0.3)] backdrop-blur-xl transition-colors md:bottom-8 md:right-8 uppercase tracking-widest"
       >
-        Ek Random Memory Dikhao ✨
+        itne messages me se koii sa ek dekhe✨
       </motion.button>
 
       <AnimatePresence>
@@ -872,19 +780,8 @@ export default function HomePage() {
                   whileTap={{ scale: 0.95 }}
                   className="mono w-full mt-8 rounded-xl border border-slate-500/50 bg-black/40 px-6 py-4 text-sm font-bold uppercase tracking-widest text-slate-200 transition-all hover:border-slate-400"
                 >
-                  Band Karo
+                  Close
                 </motion.button>
-              
-                // Inside the memory modal return:
-<motion.button
-  type="button"
-  onClick={() => setMemoryOpen(false)}
-  whileHover={{ backgroundColor: "rgba(255,255,255,0.15)", scale: 1.05 }}
-  whileTap={{ scale: 0.95 }}
-  className="mono w-full mt-8 rounded-xl border border-slate-500/50 bg-black/40 px-6 py-4 text-sm font-bold uppercase tracking-widest text-slate-200 transition-all hover:border-slate-400"
->
-  Close
-</motion.button>
               </div>
             </motion.div>
           </motion.div>
