@@ -1,6 +1,8 @@
-// Premium gallery image list (served from /birthday-app/public/kittuimgs/*)
-// NOTE: Filenames are sourced from the folder itself; some photos may include " (2)" in the name.
-const rawKittuPhotos: string[] = [
+// kittuPhotos.ts
+
+// 1. Combine all file paths into one array
+const allRawPhotos: string[] = [
+  // Original photos
   "/kittuimgs/photo_2026-06-24_19-15-17.jpg",
   "/kittuimgs/photo_2026-06-24_19-15-20.jpg",
   "/kittuimgs/photo_2026-06-24_19-15-21 (2).jpg",
@@ -42,18 +44,25 @@ const rawKittuPhotos: string[] = [
   "/kittuimgs/photo_2026-06-24_19-16-01.jpg",
   "/kittuimgs/photo_2026-06-24_19-16-02 (2).jpg",
   "/kittuimgs/photo_2026-06-24_19-16-02.jpg",
-  "/kittuimgs/photo_2026-06-24_19-16-03.jpg"
+  "/kittuimgs/photo_2026-06-24_19-16-03.jpg",
+  // New photos from kitttttu folder
+  "/kitttttu/photo_2026-06-24_19-15-17.jpg",
+  "/kitttttu/photo_1_2026-06-27_16-55-54.jpg",
+  "/kitttttu/photo_2_2026-06-27_16-55-54.jpg",
+  "/kitttttu/photo_3_2026-06-27_16-55-54.jpg",
+  "/kitttttu/photo_4_2026-06-27_16-55-54.jpg",
+  "/kitttttu/photo_6_2026-06-27_16-55-54.jpg",
+  "/kitttttu/photo_7_2026-06-27_16-55-54.jpg",
+  "/kitttttu/photo_8_2026-06-27_16-55-54.jpg",
+  "/kitttttu/photo_9_2026-06-27_16-55-54.jpg",
 ];
 
-// URL-encode just the filename segment (handles spaces like " (2)" reliably).
-export const kittuPhotos: string[] = rawKittuPhotos.map((p) => {
-  const [prefix, filename] = p.split("/kittuimgs/");
-  // If path doesn't match expected structure, return as-is.
-  if (!p.includes("/kittuimgs/") || filename === undefined) return p;
-  return `${prefix}/kittuimgs/${encodeURIComponent(filename)}`;
+// 2. Export the encoded list so the browser can read the files with spaces correctly
+export const kittuPhotos: string[] = allRawPhotos.map((p) => {
+  const parts = p.split("/");
+  const folder = parts[1]; // e.g., "kittuimgs" or "kitttttu"
+  const filename = parts[2]; // e.g., "photo_2026-06-24_19-15-21 (2).jpg"
+  
+  if (!filename) return p;
+  return `/${folder}/${encodeURIComponent(filename)}`;
 });
-
-
-
-
-
