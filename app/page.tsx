@@ -18,7 +18,7 @@ import {
   XAxis,
   YAxis
 } from "recharts";
-import FallingScrappersOverlay from "./FallingScrappersOverlay";
+// import FallingScrappersOverlay from "./FallingScrappersOverlay";
 import GalaxyTwinkleBackground from "./GalaxyTwinkleBackground";
 import PhotoGallery from "./PhotoGallery";
 import { kittuPhotos } from "./kittuPhotos";
@@ -146,101 +146,11 @@ function formatEventName(input: string): string {
 }
 
 // ✨ OPTIMIZED INTERACTIVE SCRAPPER ✨
-function ClickableScrapper({ isHeart, initialLeft, delay, duration }: { isHeart: boolean, initialLeft: number, delay: number, duration: number }) {
-  const [popped, setPopped] = useState(false);
 
-  if (popped) {
-    return (
-      <motion.div
-        className="absolute z-[100] text-xl pointer-events-none drop-shadow-[0_0_10px_rgba(255,255,255,0.8)]"
-        style={{ left: `${initialLeft}%`, top: '40%' }}
-        initial={{ scale: 0.5, opacity: 1 }}
-        animate={{ 
-          scale: [1, 2], 
-          opacity: [1, 0]
-        }}
-        transition={{ duration: 1, ease: "easeOut" }}
-      >
-        {isHeart ? "💖" : "✨"}
-      </motion.div>
-    );
-  }
 
-  return (
-    <motion.div
-      className={`absolute ${isHeart ? "text-pink-400/50" : "text-cyan-300/50"} text-sm cursor-pointer pointer-events-auto z-[60]`}
-      style={{ left: `${initialLeft}%`, top: "-10%" }}
-      initial={{ opacity: 0 }}
-      animate={{
-        y: ["0vh", "110vh"],
-        opacity: [0, 0.6, 0]
-      }}
-      transition={{
-        duration,
-        delay,
-        repeat: Infinity,
-        ease: "linear"
-      }}
-      onClick={() => setPopped(true)}
-      whileHover={{ scale: 1.5, opacity: 1 }}
-    >
-      {isHeart ? "💖" : "✨"}
-    </motion.div>
-  );
-}
 
-function FloatingScrappersForHer() {
-  const [isVisible, setIsVisible] = useState(true);
 
-  useEffect(() => {
-    const timer = setTimeout(() => setIsVisible(false), 10000);
-    return () => clearTimeout(timer);
-  }, []);
 
-  if (!isVisible) return null;
-
-  const elements = Array.from({ length: 4 }); 
-  return (
-    <div className="pointer-events-none fixed inset-0 z-[60] overflow-hidden">
-      {elements.map((_, i) => (
-        <ClickableScrapper 
-          key={i}
-          isHeart={i % 2 === 0}
-          initialLeft={Math.random() * 100}
-          delay={Math.random() * 25}
-          duration={Math.random() * 10 + 30}
-        />
-      ))}
-    </div>
-  );
-}
-
-// ✨ THE INTERACTIVE GUIDE BANNER ✨
-function InteractiveScrapperGuide() {
-  const [visible, setVisible] = useState(true);
-  // Auto-hide after 5 seconds
-  useEffect(() => {
-    const timer = setTimeout(() => setVisible(false), 5000);
-    return () => clearTimeout(timer);
-  }, []);
-  
-  return (
-    <AnimatePresence>
-      {visible && (
-        <motion.div
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          exit={{ opacity: 0 }}
-          className="fixed top-6 z-[70] w-full text-center pointer-events-none"
-        >
-          <span className="bg-black/30 backdrop-blur-md px-4 py-2 rounded-full text-[10px] text-white/50 border border-white/5 uppercase tracking-widest">
-            Tap the tiny sparks! ✨
-          </span>
-        </motion.div>
-      )}
-    </AnimatePresence>
-  );
-}
 
 export default function HomePage() {
   const [data, setData] = useState<ChatData | null>(null);
@@ -360,36 +270,36 @@ export default function HomePage() {
           <div className="relative min-h-[22rem] overflow-hidden rounded-3xl border border-white/10 bg-black/30 md:min-h-[30rem] group">
      <div className="relative h-[250px] w-full overflow-hidden rounded-3xl border border-white/10 bg-black/30">
   <motion.div 
-    className="flex h-full gap-4" // Added gap-4 for spacing between photos
-    // This animates the entire row to the left
+    className="flex h-full gap-4 px-4 cursor-grab active:cursor-grabbing"
+    // Enable dragging on the X axis
+    drag="x"
+    // Restrict the drag distance so it doesn't fly off the screen
+    dragConstraints={{ right: 0, left: -1000 }} 
+    dragElastic={0.2} // Adds a nice "bouncy" resistance at the ends
+    // Keeps it moving automatically, but drag interaction takes priority
     animate={{ x: ["0%", "-50%"] }} 
-    transition={{ 
-      duration: 50, // Increase this number to make it move slower
-      repeat: Infinity, 
-      ease: "linear" 
-    }}
+    transition={{ duration: 13, repeat: Infinity, ease: "linear" }}
   >
-    {/* We duplicate the array to ensure a seamless infinite loop */}
-    {[...kittuPhotos, ...kittuPhotos]
-      .filter(photo => photo.includes("/kitttttu/"))
+    {[...kittuPhotos.filter(p => p.includes("/kitttttu/")), ...kittuPhotos.filter(p => p.includes("/kitttttu/"))]
       .map((photo, index) => (
         <div 
           key={index} 
           className="h-full flex-shrink-0" 
-          style={{ width: '250px' }} // All photos now have the same width
+          style={{ width: '250px' }}
         >
           <img 
             src={photo} 
             alt={`Memory ${index}`} 
-            className="h-full w-full object-cover rounded-2xl border border-white/5" 
+            className="h-full w-full object-cover rounded-2xl border border-white/5 shadow-lg" 
+            draggable="false" // Prevents browser default image dragging
           />
         </div>
     ))}
   </motion.div>
   
-  {/* Professional fade masks */}
-  <div className="absolute inset-y-0 left-0 w-24 bg-gradient-to-r from-[#050810] to-transparent pointer-events-none" />
-  <div className="absolute inset-y-0 right-0 w-24 bg-gradient-to-l from-[#050810] to-transparent pointer-events-none" />
+  {/* Gradient overlays to hide the edges smoothly */}
+  <div className="absolute inset-y-0 left-0 w-20 bg-gradient-to-r from-[#050810] to-transparent pointer-events-none" />
+  <div className="absolute inset-y-0 right-0 w-20 bg-gradient-to-l from-[#050810] to-transparent pointer-events-none" />
 </div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/40 to-transparent transition-opacity duration-500 group-hover:opacity-90" />
             <div className="absolute inset-x-0 bottom-0 p-5 md:p-8">
