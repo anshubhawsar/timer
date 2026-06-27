@@ -160,7 +160,7 @@ function ClickableScrapper({ isHeart, initialLeft, delay, duration }: { isHeart:
           opacity: [1, 0.9, 0], 
           rotate: [0, isHeart ? -45 : 90, isHeart ? -90 : 180] 
         }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
+        transition={{ duration: 2, ease: "easeOut" }}
       >
         {isHeart ? "💖✨" : "✨💫"}
       </motion.div>
@@ -186,7 +186,7 @@ function ClickableScrapper({ isHeart, initialLeft, delay, duration }: { isHeart:
       }}
       onClick={(e) => {
         setPopped(true);
-        setTimeout(() => setPopped(false), 8000); // Respawns after 8 seconds!
+        setTimeout(() => setPopped(false), 19000); // Respawns after 8 seconds!
       }}
       whileHover={{ scale: 2.2, textShadow: "0px 0px 30px rgb(255,255,255)" }}
       whileTap={{ scale: 0.8 }}
@@ -236,7 +236,7 @@ function InteractiveScrapperGuide() {
                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
                 <span className="relative inline-flex rounded-full h-3 w-3 bg-pink-500 shadow-[0_0_10px_#ec4899]"></span>
               </span>
-              <span className="font-medium tracking-wide">Tap the glowing hearts & sparkles! ✨</span>
+              <span className="font-medium tracking-wide">heart pr click kro✨</span>
             </div>
             <span className="text-slate-400 text-xs hover:text-white transition-colors uppercase tracking-widest bg-white/10 px-2 py-1 rounded-full">Got it</span>
           </motion.div>
